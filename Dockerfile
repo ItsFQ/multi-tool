@@ -10,4 +10,6 @@ RUN apt-get install -y iputils-ping
 
 COPY . ./
 
+EXPOSE 8501
+
 CMD [ "streamlit", "run", "main.py" ]
